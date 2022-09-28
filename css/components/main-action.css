@@ -6,6 +6,7 @@
     font-weight: 500;
     text-decoration: none;
     margin-right: 30px;
+    font-family: 'Fira Code', sans-serif;  
 }
 
 .main-action::before{
