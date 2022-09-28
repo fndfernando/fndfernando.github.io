@@ -3,27 +3,201 @@
     <head>
         <title>Fernando Costa Campos</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/components/icon-menu.css">
+        <link rel="stylesheet" href="css/components/main-header.css">
+        <link rel="stylesheet" href="css/components/main-banner.css">        
+        <link rel="stylesheet" href="css/components/main-section.css">
+        <link rel="stylesheet" href="css/components/main-title.css">
+        <link rel="stylesheet" href="css/components/main-subtitle.css">
+        <link rel="stylesheet" href="css/components/main-box.css">
+        <link rel="stylesheet" href="css/components/main-button.css">
+        <link rel="stylesheet" href="css/components/main-action.css">
+        <link rel="stylesheet" href="css/components/skill-tec.css">
+        <link rel="stylesheet" href="css/components/wrapper-skill.css">        
+        <link rel="stylesheet" href="css/components/progress-bar.css">
+        <link rel="stylesheet" href="css/components/card-project.css">
+        <link rel="stylesheet" href="css/components/wrapper-card.css">
+        <link rel="stylesheet" href="css/components/main-description.css">
+        <link rel="stylesheet" href="css/components/button-arrow.css">
+        <link rel="stylesheet" href="css/components/node-card.css">
+        <link rel="stylesheet" href="css/components/main-carousel.css">
+        <link rel="stylesheet" href="css/components/main-footer.css">
+        <link rel="stylesheet" href="css/components/main-label.css">
+        <link rel="stylesheet" href="css/components/main-input.css">
+        <link rel="stylesheet" href="css/components/main-form.css">
     </head>
     <body>
-        <header>            
-            <!-- <img src="assets/img/logo.png" alt="Avatar do Fernando Costa"> -->
-            <h1>FCC</h1>
-            <nav>
-                <a href="" lang="en">Skill</a>
-                <a href="">Projetos</a>
-                <a href="">Sobre</a>
-                <a href="">Contatos</a>
-                <a id="button" href="" lang="en">Download CV</a>
+        <header class="main-header">            
+            <img src="assets/img/logo.png" alt="Avatar do Fernando Costa">
+
+            <a href="#menu" class="icon-menu">Abrir Menu</a>
+
+            <nav id="#menu" class="menu">
+                <a class="main-action" href="#skills" lang="en">Skill</a>
+                <a class="main-action" href="#projetos">Projetos</a>
+                <a class="main-action" href="#sobre">Sobre</a>
+                <a class="main-action" href="#contatos">Contatos</a>
+                <a class="main-button" href="/assets/Curriculum.pdf" target="_blank" lang="en">Download CV</a>
             </nav>
         </header>
+        <section class="main-banner">
+            <div class="wrapper">
+                <div class="main-box">
+                    <h1 class="main-title">Fernando Campos</h1>
+                    <h2 class="main-subtitle">Full-Stack Developer</h2>  
+                </div>
+                <div class="navigation">
+                    <a class="main-button" href="/assets/Curriculum.pdf" target="_blank" lang="en">Download CV</a>
+                    <a class="main-button" href="#contatos">Contatos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section" id="skills">
+            <h2 class="main-title -second">Skills</h2>
+            <div class="wrapper-skill">
+                <article class="skill-tec">
+                    <img class="icon" src="assets/img/ico_html5.png" alt="logo HTML 5 em pixel arte">
+                    <div class="right">
+                        <h3 class="title">HTML</h3>
+                        <progress max="100" value="50" class="progress-bar">
+                            50%
+                        </progress>
+                    </div>
+                </article>
+
+                <article class="skill-tec">
+                    <img class="icon" src="assets/img/ico_nodejs.png" alt="logo NodeJS em pixel arte">
+                    <div class="right">
+                        <h3 class="title">NodeJS</h3>
+                        <progress max="100" value="50" class="progress-bar">
+                            50%
+                        </progress>
+                    </div>
+                </article>
+
+                <article class="skill-tec">
+                    <img class="icon" src="assets/img/ico_css3.png" alt="logo CSS 3 em pixel arte">
+                    <div class="right">
+                        <h3 class="title">CSS</h3>
+                        <progress max="100" value="30" class="progress-bar">
+                            30%
+                        </progress>
+                    </div>
+                </article>
+
+                <article class="skill-tec">
+                    <img class="icon" src="assets/img/ico_js.png" alt="logo JavaScript em pixel arte">
+                    <div class="right">
+                        <h3 class="title">JavaScript</h3>
+                        <progress max="100" value="30" class="progress-bar">
+                            30%
+                        </progress>
+                    </div>
+                </article>
+
+                <article class="skill-tec">
+                    <img class="icon" src="assets/img/ico_restapi.png" alt="logo Rest API em pixel arte">
+                    <div class="right">
+                        <h3 class="title">Rest API</h3>
+                        <progress max="100" value="60" class="progress-bar">
+                            50%
+                        </progress>
+                    </div>
+                </article>            
+            </div>
+        </section>
+
+        <section class="main-section -bgBlack" id="projetos">
+            <h2 class="main-title -second">Projetos</h2>
+            <div class="wrapper-card">
+                <a href="https://fndfernando.github.io/curso-html-css-feliz/" target="_blank">
+                    <figure class="card-project">
+                        <img class="logo" src="assets/img/portifolio.png" atl="Projeto Portifolio">
+                    </figure>
+                </a>               
+                    
+            </div>            
+        </section>
+
+        <section class="main-section -bgBlue" id="sobre">
+            <h2 class="main-title -second">Sobre</h2>
+            <section class="main-carousel">
+                <button class="button-arrow -left"><span class="content">Voltar</span></button>
+
+                <div class="itens">
+                    <div class="elements">
+                        <figure class="node-card -bgBlue">
+                            <figcaption class="title">2006</figcaption>
+                            <div class="logo">
+                                <img src="assets/img/logo_dk_informatica.jpg" alt="logo DK Informática" class="log">
+                            </div>
+                        </figure>
+
+                        <figure class="node-card">
+                            <figcaption class="title">2008</figcaption>
+                            <div class="logo">
+                                <img src="assets/img/univap.png" alt="logo Faculdade univap" class="log">
+                            </div>
+                        </figure>
+
+                        <figure class="node-card">
+                            <figcaption class="title">2015</figcaption>
+                            <div class="logo">
+                                <img src="assets/img/unitau.png" alt="logo Faculdade unitau" class="log">
+                            </div>
+                        </figure>
+                        <figure class="node-card">
+                            <figcaption class="title">2020</figcaption>
+                            <div class="logo">
+                                <img src="assets/img/logo_dk.png" alt="logo DK Softwares" class="log">
+                            </div>
+                        </figure> 
+                    </div>           
+                </div>
+
+
+                <button class="button-arrow -right"><span class="content">Avançar</span></button>
+            </section>
+
+            <p class="main-description">
+                Descobri minha vocação para programador/desenvolvedor desde cedo, no início da minha adolescência já era autodidata pesquisando sobre como fazer sites e programinhas. Tive meu primeiro contato com banco de dados na 8ª série usando MS Access e seus formulários.<br>  
+                Ali já sabia o que queria ser quando crescer, escolhi fazer ensino médio com técnico em Informática. Me formei em Bacharel em Ciência da Computação e Pós-Graduei em Gestão de Projetos com Business Intelligence.<br>
+                Poderia dizer que estou envolvido no mundo da TI desde meus 13 anos, nos primórdios dos anos 2000, comecei a trabalhar em 2006 na empresa que hoje sou sócio e responsável pela área técnica e acomulando vivência e experiência em desenvolvimento para Windows, Android, APIs e Web.
+
+            </p>            
+        </section>
+
+        
+        <form class="main-form" id="contatos" action="mailto:fnd.fernando@gmail.com">
+            <legend class="main-title -second">Contatos</legend>
+    
+            <label class="main-label" for="name">Nome</label>
+            <input class="main-input" id="name" type="text" required>
+    
+            <label class="main-label" for="email">Email</label>
+            <input class="main-input" id="email" type="email" required>
+    
+            <label class="main-label" for="message">Mensagem</label>
+            <textarea class="main-input -textarea" id="message" required></textarea>
+    
+            <button class="main-button -full" type="submit">Enviar</button>
+        </form>
+
+
+        <footer class="main-footer">
+            <a href="https://twitter.com/twfernando" target="_blank" class="action">
+                <img src="assets/img/twitter.png" alt="Twitter">
+            </a>         
+        </footer>
+
+    <script src="js/components/main-carousel.js"></script>
     </body>
 </html>
-
-<!-- Modulo 2 - aula 09 -->

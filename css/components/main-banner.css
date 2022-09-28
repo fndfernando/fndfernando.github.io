@@ -1,0 +1,37 @@
+.main-banner{
+    box-sizing: border-box;
+    background-image: url('../../assets/img/foto.jpg');;    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(112, 111, 111);
+    height: 800px;
+    border-bottom: 10px solid #000;    
+    padding-top: 115px;
+    padding-left: 90px;      
+}
+
+@media (max-width: 1130px ) {
+    .main-banner{
+        height: 500px;
+        padding-top: 15px;
+        padding-left: 10px;          
+    }     
+}
+
+
+.main-banner .wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+  
+}
+
+.main-banner .main-box{
+    margin-bottom: 40px;
+
+}
+
+.main-banner .navigation{
+    display: flex;
+    justify-content: space-around;
+}

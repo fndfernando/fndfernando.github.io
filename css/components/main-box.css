@@ -1,0 +1,17 @@
+.main-box{
+    display: inline-block;
+    background-color: #2c3e4f;
+    box-shadow: 10px 10px 0 #000; 
+    text-align: center;
+    padding: 42px 44px;
+}
+
+@media (max-width: 1130px ) {
+    .main-box{
+        padding: 12px 14px;   
+    }
+}
+
+.main-box .main-title{
+    margin-bottom: 28px;
+}

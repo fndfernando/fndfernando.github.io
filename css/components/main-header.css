@@ -1,0 +1,36 @@
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e81b7;
+    border-bottom: 10px solid #000000;
+    padding: 10px 20px;
+
+}
+
+/* breakpoint, css só será acionado quando tela menor que 980px */
+@media (max-width: 980px) {
+    
+    .main-header > .menu{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        
+    }
+
+}
+
+@media (min-width: 980px) {
+    .main-header > .icon-menu {
+        display: none;
+    }
+}
