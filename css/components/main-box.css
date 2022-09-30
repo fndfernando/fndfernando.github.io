@@ -6,11 +6,6 @@
     padding: 42px 44px;
 }
 
-@media (max-width: 1130px ) {
-    .main-box{
-        padding: 12px 14px;   
-    }
-}
 
 .main-box .main-title{
     margin-bottom: 28px;

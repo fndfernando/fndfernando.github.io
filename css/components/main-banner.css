@@ -4,18 +4,10 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: rgb(112, 111, 111);
-    height: 800px;
+    height: 800px;    
     border-bottom: 10px solid #000;    
     padding-top: 115px;
     padding-left: 90px;      
-}
-
-@media (max-width: 1130px ) {
-    .main-banner{
-        height: 500px;
-        padding-top: 15px;
-        padding-left: 10px;          
-    }     
 }
 
 
@@ -28,10 +20,45 @@
 
 .main-banner .main-box{
     margin-bottom: 40px;
-
 }
 
 .main-banner .navigation{
     display: flex;
     justify-content: space-around;
+}
+
+.main-banner-max850{
+    display: none;    
+    background-color: #2c3e4f;
+}
+.main-banner-max850 .foto{
+    width: 100%;      
+}
+.main-banner-max850 .wrapper{    
+    padding-bottom: 20px;
+    border-bottom: 10px solid #000;   
+    background-color: #2c3e4f;
+    padding: 10px 44px;
+}
+.main-banner-max850 .navigation{
+    padding-top: 10px;   
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media (max-width:1130px){
+    .main-banner{
+        height: 500px;  
+    }
+}
+
+
+@media (max-width:850px){
+    .main-banner{
+        display: none;     
+    }
+    .main-banner-max850{
+        display: block;
+    }
 }
