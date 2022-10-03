@@ -11,6 +11,7 @@
 
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/components/icon-menu.css">
+        <link rel="stylesheet" href="css/components/icon-close.css">
         <link rel="stylesheet" href="css/components/main-header.css">
         <link rel="stylesheet" href="css/components/main-banner.css">        
         <link rel="stylesheet" href="css/components/main-section.css">
@@ -40,11 +41,13 @@
             <a href="#menu" class="icon-menu">Abrir Menu</a>
 
             <nav id="#menu" class="menu">
-                <a class="main-action" href="#skills" lang="en">Skill</a>
-                <a class="main-action" href="#projetos">Projetos</a>
-                <a class="main-action" href="#sobre">Sobre</a>
-                <a class="main-action" href="#contatos">Contatos</a>
-                <a class="main-button" href="/assets/Curriculum.pdf" target="_blank" lang="en">Download CV</a>
+                <a class="main-action" href="#skills" lang="en" onclick="closeMenu()">Skill</a>
+                <a class="main-action" href="#projetos onclick="closeMenu()"">Projetos</a>
+                <a class="main-action" href="#sobre" onclick="closeMenu()">Sobre</a>
+                <a class="main-action" href="#contatos" onclick="closeMenu()">Contatos</a>
+                <a class="main-button" href="/assets/Curriculum.pdf" target="_blank" lang="en" onclick="closeMenu()">Download CV</a>
+
+                <a class="icon-close" href="#menu" onclick="closeMenu()">X</a>
             </nav>
         </header>
         <section class="main-banner">
@@ -211,5 +214,6 @@
         </footer>
 
     <script src="js/components/main-carousel.js"></script>
+    <script src="js/components/main-menu.js"></script>
     </body>
 </html>

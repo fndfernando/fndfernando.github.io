@@ -4,6 +4,7 @@
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 10px;
 }
 
 .wrapper-skill .skill-tec{
@@ -17,4 +18,10 @@
 
 .wrapper-skill .progress-bar{
     width: 320px;
+}
+
+@media (max-width:450px) {
+    .wrapper-skill .progress-bar{
+        width: 220px;
+    }    
 }
