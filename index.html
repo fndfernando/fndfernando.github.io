@@ -135,7 +135,7 @@
 
                 
             <div class="wrapper-card">
-                <a href="https://fndfernando.github.io/curso-html-css-feliz/" target="_blank">
+                <a href="https://fndfernando.github.io/ target="_blank">
                     <figure class="card-project">
                         <img class="logo" src="assets/img/portifolio.png" atl="Projeto Portifolio">
                     </figure>
@@ -196,22 +196,24 @@
             <p class="main-description">
                 Descobri minha vocação para programador/desenvolvedor desde cedo, no início da minha adolescência já era autodidata pesquisando sobre como fazer sites e programinhas.<br>
                 Em 2002 cursei o ensino médio com técnico em Informática. Me formei em Bacharel em Ciência da Computação(2012) e Pós-Graduei em Gestão de Projetos com Business Intelligence(2018).<br>
-                Comecei a trabalhar em 2006 na empresa que depois de alguns anos me tornei sócio e responsável pela área técnica e acomulando vivência e experiência em desenvolvimento para Windows, Android, APIs e Web.
+                Comecei a trabalhar em 2006 na empresa que depois de alguns anos me tornei sócio e responsável pela área técnica, acomulando vivência e experiência em desenvolvimento para Windows, Android, APIs e Web.
             </p>            
         </section>
 
         
-        <form class="main-form" id="contatos" action="mailto:fnd.fernando@gmail.com">
-            <legend class="main-title -second">Contatos</legend>
+        <form class="main-form" id="contatos" method="post" action="https://formspree.io/f/xlevnowp">
+            <legend class="main-title -second">Contatos</legend>   
+
+            <input type="hidden" name="Subject" value="Portifolio">
+
+            <label class="main-label" for="full-name">Nome</label>
+            <input class="main-input" name="name" id="full-name" type="text" required>
     
-            <label class="main-label" for="name">Nome</label>
-            <input class="main-input" id="name" type="text" required>
-    
-            <label class="main-label" for="email">Email</label>
-            <input class="main-input" id="email" type="email" required>
+            <label class="main-label" for="email-address">Email</label>
+            <input class="main-input" name="_replyto" id="email-address" type="email" required>
     
             <label class="main-label" for="message">Mensagem</label>
-            <textarea class="main-input -textarea" id="message" required></textarea>
+            <textarea class="main-input -textarea" name="message" id="message"" required></textarea>
     
             <button class="main-button -full" type="submit">Enviar</button>
         </form>
